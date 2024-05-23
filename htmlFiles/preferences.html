@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>U.P.M / UFO Battle</title>
+    <link href="../cssFiles/preferences.css" rel="stylesheet"/>
     <link href="../cssFiles/home.css" rel="stylesheet"/>
 </head>
 
 <body>
+    <header>
+        <h1>UFO Game Preferences</h1>
+    </header>
+
     <div class="navbar">
         <div class="functions">
             <img class="UPM-pic" 
@@ -52,23 +58,24 @@
 
         </div>
     </div>
+    
+    <div class="preferences-form">
+        <form id="preferencesForm">
+            <label for="numUFOs">Number of UFOs (1-5):</label>
+            <input type="number" id="numUFOs" min="1" max="5" value="1"><br><br>
 
-    <div class="information">
-        <h2>Welcome to UFO Battle!</h2>
-        <p>
-            Get ready for an exciting UFO Battle! Take control of your spaceship, eliminate UFOs, and aim for the high score.
-        </p>
-        <p>
-            <strong>How to Play:</strong> Use the arrow keys to move your spaceship. Press the spacebar to shoot missiles and
-            defend against the UFO invasion. Aim carefully to hit as many UFOs as possible.
-        </p>
-        <p>
-            <strong>Objective:</strong> Score points by shooting down UFOs. Be strategic and avoid getting hit. Your mission is
-            to achieve the highest score and secure your place in the Records!
-        </p>
-        <button class="startButton" onclick="redirectToPreferences()">Start now!</button>
-        <script src="../jsFiles/home.js"></script>
+            <label for="playtime">Playtime (seconds):</label>
+            
+            <select id="playtime">
+                <option value="60">60 seconds</option>
+                <option value="120">120 seconds</option>
+                <option value="180">180 seconds</option>
+            </select><br><br>
+
+            <button type="submit">Accept</button>
+        </form>
     </div>
-    <img id='ufo' src="../imgs/ufo.png" STYLE="left:0px;bottom:15px;width:60px" />
+
+    <script type="text/javascript" src="../jsFiles/preferences.js"></script>
 </body>
 </html>

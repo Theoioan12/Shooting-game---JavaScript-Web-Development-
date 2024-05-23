@@ -3,11 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>U.P.M / UFO Battle</title>
+    <title>Top 10 Records</title>
+    <link rel="stylesheet" href="../cssFiles/records.css">
     <link href="../cssFiles/home.css" rel="stylesheet"/>
 </head>
-
 <body>
+    <header>
+        <h1>Records</h1>
+    </header>
+    
+    <header>
+        <h1>Records</h1>
+    </header>
+    
+    <center>
+        <p id="summary"></p>
+    </center>
+
+    <div class="records-container">
+        <h3>Top 10 records</h3>
+        <hr />
+
+        <table id="res"></table>
+
+    </div>
+
+    <br />
+    <hr />
+    
+    <script type="text/javascript" src="../jsFiles/records.js"></script>
+    
     <div class="navbar">
         <div class="functions">
             <img class="UPM-pic" 
@@ -52,23 +77,5 @@
 
         </div>
     </div>
-
-    <div class="information">
-        <h2>Welcome to UFO Battle!</h2>
-        <p>
-            Get ready for an exciting UFO Battle! Take control of your spaceship, eliminate UFOs, and aim for the high score.
-        </p>
-        <p>
-            <strong>How to Play:</strong> Use the arrow keys to move your spaceship. Press the spacebar to shoot missiles and
-            defend against the UFO invasion. Aim carefully to hit as many UFOs as possible.
-        </p>
-        <p>
-            <strong>Objective:</strong> Score points by shooting down UFOs. Be strategic and avoid getting hit. Your mission is
-            to achieve the highest score and secure your place in the Records!
-        </p>
-        <button class="startButton" onclick="redirectToPreferences()">Start now!</button>
-        <script src="../jsFiles/home.js"></script>
-    </div>
-    <img id='ufo' src="../imgs/ufo.png" STYLE="left:0px;bottom:15px;width:60px" />
 </body>
 </html>

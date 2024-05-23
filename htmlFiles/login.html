@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>U.P.M / UFO Battle</title>
-    <link href="../cssFiles/home.css" rel="stylesheet"/>
+    <title>Login</title>
+    <link rel="stylesheet" href="../cssFiles/home.css">
+    <link rel="stylesheet" href="../cssFiles/login.css">
 </head>
 
 <body>
@@ -31,7 +33,7 @@
             </a>
 
             <a class="Home" href="./records.html"
-            target="_self">
+                target="_self">
                 Records
                 <img class="home-img" src="../icons/vinyl.png">
             </a>
@@ -52,23 +54,23 @@
 
         </div>
     </div>
+    
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required><br>
 
-    <div class="information">
-        <h2>Welcome to UFO Battle!</h2>
-        <p>
-            Get ready for an exciting UFO Battle! Take control of your spaceship, eliminate UFOs, and aim for the high score.
-        </p>
-        <p>
-            <strong>How to Play:</strong> Use the arrow keys to move your spaceship. Press the spacebar to shoot missiles and
-            defend against the UFO invasion. Aim carefully to hit as many UFOs as possible.
-        </p>
-        <p>
-            <strong>Objective:</strong> Score points by shooting down UFOs. Be strategic and avoid getting hit. Your mission is
-            to achieve the highest score and secure your place in the Records!
-        </p>
-        <button class="startButton" onclick="redirectToPreferences()">Start now!</button>
-        <script src="../jsFiles/home.js"></script>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required><br>
+
+            <button id="login" type="button" onclick="login()">Login</button>
+        </form>
+        <p id="error-message" class="error-message"></p>
     </div>
-    <img id='ufo' src="../imgs/ufo.png" STYLE="left:0px;bottom:15px;width:60px" />
+    <div id="result"></div>
+
+    <script src="../jsFiles/login.js"></script>
 </body>
+
 </html>
